@@ -8,6 +8,9 @@ func averageMarks(scores []float64) float64 {
 		sum += score
 	}
 	average := sum / float64(len(scores))
+	if len(scores) == 0 {
+		return 1
+	}
 	return average
 }
 
